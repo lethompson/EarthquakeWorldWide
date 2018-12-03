@@ -294,7 +294,7 @@ if( isset( $_POST["submit"] ) ) {
                     
 </header>
         
-    <form method="POST" action="">
+    <form method="POST" action="index.php">
       
         <div class="form-label-group"> 
         <!--<input type="text" id="idemail" class="form-control:" required> 
@@ -309,7 +309,7 @@ if( isset( $_POST["submit"] ) ) {
         <textarea id="message" name="message" rows="3" class="form-control" placeholder=”Message”></textarea>
         </div> 
         <div id="form-response"></div> 
-        <button class="btn btn-lg btn-primary btn-block" id="submit" type="submit" style="background-color:#28547C;">Request Demo</button>
+        <button class="btn btn-lg btn-primary btn-block" name="submit" id="submit" type="submit" style="background-color:#28547C;">Request Demo</button>
     </form>
 
         
