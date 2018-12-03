@@ -1,3 +1,77 @@
+<?php
+
+include('connection.php');
+
+
+//session_start();
+
+//$id =$_GET['id'];
+
+//echo $id;
+
+if( isset( $_POST["submit"] ) ) {
+        
+    // build a function that validates data
+    function validateFormData( $formData ) {
+        $formData = trim( stripslashes( htmlspecialchars( $formData ) ) );
+        return $formData;
+    }
+
+    // set all variables to empty by default
+    $name = $email = $message = "";
+    
+    // check to see if inputs are empty
+    // create variables with form data
+    // wrap the data with our function
+    
+    if( !$_POST["name"] ) {
+        $nameError = "Please enter a name <br>";
+    } else {
+        $name = validateFormData( $_POST["name"] );
+    }
+
+    if( !$_POST["email"] ) {
+        $emailError = "Please enter your email <br>";
+    } else {
+        $email = validateFormData( $_POST["email"] );
+    }
+
+    if( !$_POST["message"] ) {
+        $messageError = "Please enter a message <br>";
+    } else {
+        $message = validateFormData( $_POST["message"] );
+    }
+    
+    //$name = $_POST['name'];
+   // $email = $_POST['email'];
+   // $message = $_POST['message'];
+   
+    // check to see if each variable has data
+    if( $name && $email && $message) {
+        $query = "INSERT INTO quakereport(name, email, message) VALUES ('$name','$email','$message')";
+
+      //mysqli_query($conn,"INSERT INTO recruiter (name,email,message) 
+//VALUES ('$name','$email','$message')");
+      //  mysqli_query($conn,$query);
+        if( mysqli_query( $conn, $query ) ) {
+            echo "<div class='alert alert-success'>New record in database!</div>";
+        } else {
+            echo "Error: ". $query . "<br>" . mysqli_error($conn);
+        }
+    
+        
+
+    }
+    
+}
+
+    mysqli_close($conn);
+
+
+?>
+
+
+
 <html>
 	<head>
         
