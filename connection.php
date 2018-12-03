@@ -1,6 +1,6 @@
 <?php
 
-$server     = "aadejmeiqo85rb.cjpd7jwiabca.us-west-2.rds.amazonaws.com";//RDS Endpoint (oregon)
+$server     = "awseduinstance.ccq1ha3xaabo.us-west-1.rds.amazonaws.com";//RDS Endpoint (California)
 $username   = "Admin";//username
 $password   = "205cuPA!";//RDS password
 $db         = "opsworksdb"; //RDS DBname
