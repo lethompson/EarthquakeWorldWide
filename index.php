@@ -62,14 +62,14 @@
 
 		<!-- Header -->
 			<header id="header" class="alt">
-				<div class="logo"><a href="index.html"><?php echo "Earthquake";?> <span>Monitoring &amp; Detection</span></a></div>
+				<div class="logo"><a href="index.php"><?php echo "Earthquake";?> <span>Monitoring &amp; Detection</span></a></div>
 				<a href="#menu">Menu</a>
 			</header>
 
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
-					<li><a href="index.html">Home</a></li>
+					<li><a href="index.php">Home</a></li>
 					<li><a href="generic.html">Generic</a></li>
 					<!--<li><a href="elements.html">Elements</a></li>-->
 				</ul>
