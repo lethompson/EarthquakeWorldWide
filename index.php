@@ -287,30 +287,30 @@ if( isset( $_POST["submit"] ) ) {
 
         <!----------------------     FORM CODE -------------------------------->
  
-<header class="align-center">
+<!--<header class="align-center">-->
 						<!--<p class="special">Deformation in the boundary zone between tectonic plates is the fundamental cause of earthquakes around the world</p>-->
-						  <h2>Report an Earthquake</h2>
+						  <!--<h2>Report an Earthquake</h2>-->
     
                     
-</header>
+<!--</header>-->
         
-    <form method="POST" action="index.php">
+    <!--<form method="POST" action="index.php">-->
       
-        <div class="form-label-group"> 
+        <!--<div class="form-label-group">--> 
         <!--<input type="text" id="idemail" class="form-control:" required> 
         <label for="idemail" class="control-label">ID</label> -->
-        <input type="text" id="name" class="form-control:" required> 
+       <!-- <input type="text" name="name" id="name" class="form-control:" required> 
         <label for="name" class="control-label">Name</label> 
         </div> 
         <div class="form-label-group"> 
-        <input type="text" id="email" class="form-control" required> 
-        <label for="email" class="control-label">Email address</label> </div> 
+        <input type="text" name="email" id="email" class="form-control" required> 
+        <label for="email" name="email" class="control-label">Email address</label> </div> 
         <div class="form-label-group"> 
         <textarea id="message" name="message" rows="3" class="form-control" placeholder=”Message”></textarea>
         </div> 
         <div id="form-response"></div> 
         <button class="btn btn-lg btn-primary btn-block" name="submit" id="submit" type="submit" style="background-color:#28547C;">Request Demo</button>
-    </form>
+    </form>-->
 
         
         <!-------------------------- FORM CODE --------------------------------->
